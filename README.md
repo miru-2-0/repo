@@ -1,7 +1,7 @@
 
 # Miru-Repo
 
-Miru extensions repository | [Miru App Download](https://github.com/miru-project/miru-app) |
+Miru extensions repository | [Miru App Download](https://github.com/miru-2-0/miru-app) |
 
 ## List
 |  Name   | Package | Version | Author | Language | Type | Source |
