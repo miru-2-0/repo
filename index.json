@@ -11,5 +11,18 @@
   "url": "360zy.com.js",
   "version": "v0.0.3",
   "webSite": "https://360zy.com"
+ },
+ {
+  "author": "hualiong",
+  "icon": "https://lzizy.com/template/lzizycom/static/picture/logo.png",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "量子资源",
+  "nsfw": "false",
+  "package": "lzzy.tv",
+  "type": "bangumi",
+  "url": "lzzy.tv.js",
+  "version": "v0.0.3",
+  "webSite": "https://lzizy.com"
  }
 ]

@@ -1,10 +1,10 @@
 // ==MiruExtension==
 // @name         量子资源
-// @version      v0.0.2
+// @version      v0.0.3
 // @author       hualiong
 // @lang         zh-cn
 // @license      MIT
-// @icon         https://lzizy2.com/favicon.ico
+// @icon         https://lzizy.com/template/lzizycom/static/picture/logo.png
 // @package      lzzy.tv
 // @type         bangumi
 // @webSite      https://lzizy.com
