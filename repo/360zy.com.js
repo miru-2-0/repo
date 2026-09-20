@@ -121,19 +121,40 @@ export default class extends Extension {
 
   async detail(id) {
     let desc = "无";
-    const anime = (await this.$get(`&ids=${id}`)).list[0];
+    const anime = (await this.$get(`&ids=${id}`)).list[0] ?? {};
     const blurb = this.text(anime.vod_blurb);
     const content = this.text(anime.vod_content);
     desc = desc.length < blurb?.length ? blurb : desc;
     desc = desc.length < content.length ? content : desc;
-    const urls = anime.vod_play_url
+    const urls = (anime.vod_play_url ?? "")
       .split("#")
       .filter((e) => e)
       .map((e) => {
         const s = e.split("$");
         return { name: s[0], url: s[1] };
       });
-    return { title: anime.vod_name, cover: anime.vod_pic, desc, episodes: [{ title: this.name, urls }] };
+    return {
+      title: anime.vod_name,
+      cover: anime.vod_pic,
+      desc,
+      type: anime.type_name,
+      director: anime.vod_director,
+      writer: anime.vod_writer,
+      area: anime.vod_area,
+      lang: anime.vod_lang,
+      year: anime.vod_year,
+      pubdate: anime.vod_pubdate,
+      remarks: anime.vod_remarks,
+      total: anime.vod_total ? String(anime.vod_total) : anime.vod_serial,
+      score: parseFloat(anime.vod_douban_score) ? anime.vod_douban_score : anime.vod_score,
+      actors: anime.vod_actor
+        ? anime.vod_actor
+            .split("/")
+            .map((e) => e.trim())
+            .filter(Boolean)
+        : [],
+      episodes: [{ title: this.name, urls }],
+    };
   }
 
   async watch(url) {
