@@ -1,6 +1,6 @@
 // ==MiruExtension==
 // @name         量子资源
-// @version      v0.0.4
+// @version      v0.0.3
 // @author       hualiong
 // @lang         zh-cn
 // @license      MIT
