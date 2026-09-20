@@ -4,7 +4,7 @@
 // @author       hualiong
 // @lang         zh-cn
 // @license      MIT
-// @icon         https://360zy.com/favicon.ico
+// @icon         https://360zy.tv/logo.png
 // @package      360zy.com
 // @type         bangumi
 // @webSite      https://360zy.com
