@@ -27,6 +27,19 @@
  },
  {
   "author": "hualiong",
+  "icon": "https://cj.ffzyapi.com/template/default/img/favicon.png",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "非凡资源",
+  "nsfw": "false",
+  "package": "ffzy.tv",
+  "type": "bangumi",
+  "url": "ffzy.tv.js",
+  "version": "v0.0.4",
+  "webSite": "https://cj.ffzyapi.com"
+ },
+ {
+  "author": "hualiong",
   "icon": "https://lzizy.com/template/default/img/favicon.png",
   "lang": "zh-cn",
   "license": "MIT",
