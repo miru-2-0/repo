@@ -89,5 +89,18 @@
   "url": "wujinzy.com.js",
   "version": "v0.0.5",
   "webSite": "https://wujinzy.com"
+ },
+ {
+  "author": "hualiong",
+  "icon": "https://yhzy.cc/template/ziyuan2/images/logo.png",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "樱花资源",
+  "nsfw": "false",
+  "package": "yhzy.cc",
+  "type": "bangumi",
+  "url": "yhzy.cc.js",
+  "version": "v0.0.4",
+  "webSite": "https://yhzy.cc"
  }
 ]
