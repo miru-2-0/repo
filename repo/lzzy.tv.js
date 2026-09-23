@@ -4,7 +4,7 @@
 // @author       hualiong
 // @lang         zh-cn
 // @license      MIT
-// @icon         https://lzizy.com/template/lzizycom/static/picture/logo.png
+// @icon         https://lzizy.com/template/default/img/favicon.png
 // @package      lzzy.tv
 // @type         bangumi
 // @webSite      https://lzizy.com
