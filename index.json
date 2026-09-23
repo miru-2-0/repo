@@ -63,5 +63,18 @@
   "url": "lzzy.tv.js",
   "version": "v0.0.5",
   "webSite": "https://lzizy.com"
+ },
+ {
+  "author": "hualiong",
+  "icon": "https://www.subozy.com/favicon.ico",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "速播资源",
+  "nsfw": "false",
+  "package": "subozy.com",
+  "type": "bangumi",
+  "url": "subozy.com.js",
+  "version": "v0.0.4",
+  "webSite": "https://www.subozy.com"
  }
 ]
