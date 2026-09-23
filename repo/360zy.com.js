@@ -1,6 +1,6 @@
 // ==MiruExtension==
 // @name         360资源
-// @version      v0.0.3
+// @version      v0.0.4
 // @author       hualiong
 // @lang         zh-cn
 // @license      MIT
@@ -146,10 +146,16 @@ export default class extends Extension {
       pubdate: anime.vod_pubdate,
       remarks: anime.vod_remarks,
       total: anime.vod_total ? String(anime.vod_total) : anime.vod_serial,
-      score: parseFloat(anime.vod_douban_score) ? anime.vod_douban_score : anime.vod_score,
+            score: (() => {
+        const d = parseFloat(anime.vod_douban_score);
+        const v = parseFloat(anime.vod_score);
+        if (d > 0) return anime.vod_douban_score;
+        if (v > 0) return anime.vod_score;
+        return undefined;
+      })(),
       actors: anime.vod_actor
         ? anime.vod_actor
-            .split("/")
+            .split(/[/|、,，;；]+/)
             .map((e) => e.trim())
             .filter(Boolean)
         : [],
