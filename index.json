@@ -40,6 +40,19 @@
  },
  {
   "author": "hualiong",
+  "icon": "https://jisuzy.com/favicon.ico",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "极速资源",
+  "nsfw": "false",
+  "package": "jisuzy.com",
+  "type": "bangumi",
+  "url": "jisuzy.com.js",
+  "version": "v0.0.4",
+  "webSite": "https://jisuzy.com"
+ },
+ {
+  "author": "hualiong",
   "icon": "https://lzizy.com/template/default/img/favicon.png",
   "lang": "zh-cn",
   "license": "MIT",
