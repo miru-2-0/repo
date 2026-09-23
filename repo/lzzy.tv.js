@@ -1,6 +1,6 @@
 // ==MiruExtension==
 // @name         量子资源
-// @version      v0.0.4
+// @version      v0.0.5
 // @author       hualiong
 // @lang         zh-cn
 // @license      MIT
@@ -13,7 +13,7 @@
 export default class extends Extension {
   genres = {};
 
-  domains = {
+domains = {
     primary: [
       "lzizy.com",
     ],
@@ -28,6 +28,12 @@ export default class extends Extension {
       "lzizy8.com",
     ],
   };
+
+  searchDomains = [
+    "macapi1.com",
+    "macapi2.com",
+    "macapi3.com",
+  ];
 
   dict = new Map([
     ["&nbsp;", " "],
@@ -102,11 +108,31 @@ export default class extends Extension {
     }));
   }
 
+  async $search(kw, t, page, timeout = 4000) {
+    const list = this.searchDomains.map((domain) =>
+      this.request(`/maccms/json/liangzi/?ac=videolist&wd=${kw}&t=${t ?? ""}&pg=${page}`, {
+        headers: { "Miru-Url": `https://${domain}` },
+      })
+    );
+    list.push(
+      new Promise((_, reject) => {
+        setTimeout(() => {
+          reject(new Error("Request timed out!"));
+        }, timeout);
+      })
+    );
+    try {
+      return await Promise.any(list);
+    } catch (error) {
+      throw error;
+    }
+  }
+
   async search(kw, page, filter) {
     if (!kw && !(filter?.genres?.[0])) {
       return this.latest(page);
     }
-    const res = await this.$get(`&wd=${kw}&t=${filter?.genres?.[0] ?? ""}&pg=${page}`);
+    const res = await this.$search(kw, filter?.genres?.[0], page);
     return res.list.map((e) => ({
       title: e.vod_name,
       url: `${e.vod_id}`,
