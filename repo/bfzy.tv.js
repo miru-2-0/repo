@@ -1,5 +1,5 @@
 // ==MiruExtension==
-// @name         暴风资源[高清无水印]
+// @name         暴风资源
 // @version      v0.0.5
 // @author       jason
 // @lang         zh-cn
