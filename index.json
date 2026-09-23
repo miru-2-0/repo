@@ -13,6 +13,19 @@
   "webSite": "https://360zy.com"
  },
  {
+  "author": "jason",
+  "icon": "https://bfzy.tv/static/img/favicon.png",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "暴风资源[高清无水印]",
+  "nsfw": "false",
+  "package": "bfzy.tv",
+  "type": "bangumi",
+  "url": "bfzy.tv.js",
+  "version": "v0.0.5",
+  "webSite": "https://bfzy.tv"
+ },
+ {
   "author": "hualiong",
   "icon": "https://lzizy.com/template/default/img/favicon.png",
   "lang": "zh-cn",
