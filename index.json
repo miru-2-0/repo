@@ -82,12 +82,12 @@
   "icon": "https://ukuzy3.com/template/vipzy/images/logo.gif",
   "lang": "zh-cn",
   "license": "MIT",
-  "name": "U酷资源网",
+  "name": "U酷资源站",
   "nsfw": "false",
   "package": "ukuzy.com",
   "type": "bangumi",
   "url": "ukuzy.com.js",
-  "version": "v0.0.4",
+  "version": "v0.0.5",
   "webSite": "https://ukuzy.com"
  },
  {
