@@ -1,6 +1,6 @@
 // ==MiruExtension==
-// @name         U酷资源网
-// @version      v0.0.4
+// @name         U酷资源站
+// @version      v0.0.5
 // @author       hualiong
 // @lang         zh-cn
 // @license      MIT
@@ -15,20 +15,11 @@ export default class extends Extension {
 
   domains = {
     primary: [
-      "api.ukuapi.com"
+      "api.ukuapi88.com"
     ],
     alternate: [
-      "ukuzy.com",
-      "ukuzy0.com",
-      "ukuzy1.com",
-      "ukuzy2.com",
-      "ukuzy3.com",
-      "ukuzy4.com",
-      "ukuzy5.com",
-      "ukuzy6.com",
-      "ukuzy7.com",
-      "ukuzy8.com",
-      "ukuzy9.com"
+      "api.ukuapi.com",
+      "ukuzy.com"
     ],
   };
 
