@@ -91,6 +91,19 @@
   "webSite": "https://wujinzy.com"
  },
  {
+  "author": "jason",
+  "icon": "https://yayazy3.com/template/yayazy/statics/img/logo.png",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "丫丫资源",
+  "nsfw": "false",
+  "package": "yayazy.net",
+  "type": "bangumi",
+  "url": "yayazy.net.js",
+  "version": "v0.0.5",
+  "webSite": "https://yayazy.net"
+ },
+ {
   "author": "hualiong",
   "icon": "https://yhzy.cc/template/ziyuan2/images/logo.png",
   "lang": "zh-cn",
