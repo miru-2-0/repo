@@ -79,6 +79,19 @@
  },
  {
   "author": "hualiong",
+  "icon": "https://ukuzy3.com/template/vipzy/images/logo.gif",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "U酷资源网",
+  "nsfw": "false",
+  "package": "ukuzy.com",
+  "type": "bangumi",
+  "url": "ukuzy.com.js",
+  "version": "v0.0.4",
+  "webSite": "https://ukuzy.com"
+ },
+ {
+  "author": "hualiong",
   "icon": "https://wujinzy.com/template/ziyuan2/images/logo.jpg",
   "lang": "zh-cn",
   "license": "MIT",
