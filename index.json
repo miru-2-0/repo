@@ -13,19 +13,6 @@
   "webSite": "https://360zy.com"
  },
  {
-  "author": "hualiong",
-  "icon": "https://aosikazy10.com/favicon.ico",
-  "lang": "zh-cn",
-  "license": "MIT",
-  "name": "奥斯卡资源站",
-  "nsfw": "true",
-  "package": "aosikazy.com",
-  "type": "bangumi",
-  "url": "aosikazy.com.js",
-  "version": "v0.0.4",
-  "webSite": "https://aosikazy.vip"
- },
- {
   "author": "jason",
   "icon": "https://bfzy.tv/static/img/favicon.png",
   "lang": "zh-cn",
@@ -66,19 +53,6 @@
  },
  {
   "author": "hualiong",
-  "icon": "https://lyzy8.top/upload/site/20240405-1/0abc49d6b935f5ff17488568f99d2d52.png",
-  "lang": "zh-cn",
-  "license": "MIT",
-  "name": "老鸭资源",
-  "nsfw": "true",
-  "package": "laoyazy.com",
-  "type": "bangumi",
-  "url": "laoyazy.com.js",
-  "version": "v0.0.4",
-  "webSite": "https://laoyazy.com"
- },
- {
-  "author": "hualiong",
   "icon": "https://lzizy.com/template/default/img/favicon.png",
   "lang": "zh-cn",
   "license": "MIT",
@@ -89,45 +63,6 @@
   "url": "lzzy.tv.js",
   "version": "v0.0.5",
   "webSite": "https://lzizy.com"
- },
- {
-  "author": "hualiong",
-  "icon": "https://moduzy.vip/favicon.ico",
-  "lang": "zh-cn",
-  "license": "MIT",
-  "name": "魔都资源网",
-  "nsfw": "true",
-  "package": "moduzy.com",
-  "type": "bangumi",
-  "url": "moduzy.com.js",
-  "version": "v0.0.4",
-  "webSite": "https://moduzy.vip"
- },
- {
-  "author": "author",
-  "icon": "http://www.sazkino.com/favicon.ico",
-  "lang": "zh-ug",
-  "license": "license",
-  "name": "sazkino",
-  "nsfw": "false",
-  "package": "sazkino.com",
-  "type": "bangumi",
-  "url": "sazkino.com.js",
-  "version": "v0.0.1",
-  "webSite": "http://www.sazkino.com"
- },
- {
-  "author": "hualiong",
-  "icon": "https://senlinzy.com/template/demo/img/logo.gif",
-  "lang": "zh-cn",
-  "license": "MIT",
-  "name": "森林资源",
-  "nsfw": "true",
-  "package": "senlinzy.com",
-  "type": "bangumi",
-  "url": "senlinzy.com.js",
-  "version": "v0.0.4",
-  "webSite": "https://senlinzy.com"
  },
  {
   "author": "hualiong",
@@ -193,18 +128,5 @@
   "url": "yhzy.cc.js",
   "version": "v0.0.4",
   "webSite": "https://yhzy.cc"
- },
- {
-  "author": "hualiong",
-  "icon": "https://yutuzy4.com/template/demo/img/logo.png",
-  "lang": "zh-cn",
-  "license": "MIT",
-  "name": "玉兔资源",
-  "nsfw": "true",
-  "package": "yutuzy.com",
-  "type": "bangumi",
-  "url": "yutuzy.com.js",
-  "version": "v0.0.4",
-  "webSite": "https://yutuzy.com"
  }
 ]
