@@ -65,6 +65,19 @@
   "webSite": "https://lzizy.com"
  },
  {
+  "author": "author",
+  "icon": "http://www.sazkino.com/favicon.ico",
+  "lang": "zh-ug",
+  "license": "license",
+  "name": "sazkino",
+  "nsfw": "false",
+  "package": "sazkino.com",
+  "type": "bangumi",
+  "url": "sazkino.com.js",
+  "version": "v0.0.1",
+  "webSite": "http://www.sazkino.com"
+ },
+ {
   "author": "hualiong",
   "icon": "https://www.subozy.com/favicon.ico",
   "lang": "zh-cn",
