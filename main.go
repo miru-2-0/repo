@@ -35,8 +35,8 @@ func main() {
 Miru extensions repository | [Miru App Download](https://github.com/miru-2-0/miru-app) |
 
 ## List
-|  Name   | Package | Version | Author | Language | Type | Source |
-|  ----   | ---- | --- | ---  | ---  | --- | --- |
+|  Name   | Package | Version | Author | License | Language | Type | Source |
+|  ----   | ---- | --- | ---  | --- | --- | --- | --- |
 `
 
 	for _, v := range extensions {
@@ -45,7 +45,7 @@ Miru extensions repository | [Miru App Download](https://github.com/miru-2-0/mir
 		if nsfw {
 			continue
 		}
-		readme += fmt.Sprintf("| %s | %s | %s | %s | %s | %s | %s |\n", v["name"], v["package"], v["version"], v["author"], v["lang"], v["type"], url)
+		readme += fmt.Sprintf("| %s | %s | %s | %s | %s | %s | %s | %s |\n", v["name"], v["package"], v["version"], v["author"], v["license"], v["lang"], v["type"], url)
 	}
 	f2.WriteString(readme)
 	writeDisclaimer(f2)
