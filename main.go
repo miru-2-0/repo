@@ -111,7 +111,9 @@ func readRepoExtensions() []map[string]string {
 		for _, v := range lines {
 			if v[:4] == "// @" {
 				s := strings.Split(v[4:], " ")
-				extension[s[0]] = strings.Trim(s[len(s)-1], "\r")
+				if len(s) > 1 {
+					extension[s[0]] = strings.Trim(s[len(s)-1], "\r")
+				}
 			}
 		}
 		extension["url"] = de2.Name()
