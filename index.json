@@ -65,10 +65,8 @@
   "webSite": "https://lzizy.com"
  },
  {
-  "author": "author",
   "icon": "http://www.sazkino.com/favicon.ico",
   "lang": "zh-ug",
-  "license": "license",
   "name": "sazkino",
   "nsfw": "false",
   "package": "sazkino.com",
