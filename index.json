@@ -39,7 +39,7 @@
   "webSite": "https://cj.ffzyapi.com"
  },
  {
-  "author": "hualiong",
+  "author": "SendHX \u0026 hualiong",
   "icon": "https://jisuzy.com/favicon.ico",
   "lang": "zh-cn",
   "license": "MIT",
@@ -65,8 +65,10 @@
   "webSite": "https://lzizy.com"
  },
  {
+  "author": "",
   "icon": "http://www.sazkino.com/favicon.ico",
   "lang": "zh-ug",
+  "license": "",
   "name": "sazkino",
   "nsfw": "false",
   "package": "sazkino.com",
