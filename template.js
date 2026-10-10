@@ -10,9 +10,21 @@
 // @webSite      https://example.com
 // @nsfw         false
 // ==/MiruExtension==
+// 关于 webSite 与请求域名：
+//   Miru 中 webSite 有两个作用：
+//     1) 作为 this.request() 未传 "Miru-Url" 头时的默认请求 base URL；
+//     2) 作为默认 Referer／扩展详情页展示的网站。
+//   因此：
+//     - 若每个请求都显式传 headers:{ "Miru-Url": <接口host> }（推荐，见下方 $get），
+//       webSite 可填官网（仅展示/Referer 兜底）；
+//     - 若直接用相对路径 this.request("/api/..") 且不传 "Miru-Url"，
+//       则 webSite 必须是真实接口 host，否则请求会拼错域名。
+//   约定：webSite 填官网，接口/镜像域名在代码里用 Miru-Url 设定。
+//   注意：注释里不要出现 "@字段名" 后跟空白，否则会被 Miru 头部解析正则覆盖正式值。
 
 export default class extends Extension {
-  // 可选：请求的公共封装（镜像域名、超时重试等）
+  // 请求的公共封装：显式指定 Miru-Url（接口 host），与 webSite（官网）解耦。
+  // 镜像域名、超时重试等都可在此集中处理。
   async $get(params) {
     return this.request("/api/path?" + params, {
       headers: { "Miru-Url": "https://example.com" },
