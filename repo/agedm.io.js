@@ -1,6 +1,6 @@
 // ==MiruExtension==
 // @name         AGE动漫
-// @version      v0.0.3
+// @version      v0.0.4
 // @author       appdevelpo
 // @lang         zh-cn
 // @license      MIT
@@ -10,14 +10,21 @@
 // @webSite      https://www.agedm.io
 // @nsfw         false
 // ==/MiruExtension==
-//age.tv、agefans.com、agedm.com、agedm.io
 export default class extends Extension {
+    apiHost = "https://api.agedm.io";
+    referer = "https://m.agedm.io/";
+    ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/244.178.44.111 Safari/537.36";
+
+    // 统一请求封装：显式指定 Miru-Url（接口 host），避免依赖 @webSite。
+    async $get(path, headers = {}) {
+        headers["Miru-Url"] = this.apiHost;
+        if (!headers["User-Agent"]) headers["User-Agent"] = this.ua;
+        return this.request(path, { headers });
+    }
+
     async search(kw, page) {
         const encode_kw = encodeURI(kw)
-        const res = await this.request(`/v2/search?query=${encode_kw}&page=${page}`,{
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/244.178.44.111 Safari/537.36',
-            }});
+        const res = await this.$get(`/v2/search?query=${encode_kw}&page=${page}`);
         const json_res = JSON.parse(JSON.stringify(res))
         
         // 检查json_res.data是否存在以及是否包含videos属性
@@ -37,10 +44,7 @@ export default class extends Extension {
         return bangumi
     }
     async latest(page) {
-        const res = await this.request(`/v2/catalog?genre=all&label=all&letter=all&order=time&region=all&resource=all&season=all&status=all&year=all&page=${page}&size=50`,{
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/244.178.44.111 Safari/537.36',
-            }})
+        const res = await this.$get(`/v2/catalog?genre=all&label=all&letter=all&order=time&region=all&resource=all&season=all&status=all&year=all&page=${page}&size=50`)
         const json_res = JSON.parse(JSON.stringify(res))
         // 
         if (!json_res.videos || !Array.isArray(json_res.videos)) {
@@ -59,11 +63,8 @@ export default class extends Extension {
     }
 
     async detail(url) {
-        const res = await this.request(`/v2/detail/${url}`,{
-            headers:{
-                "Referer":"https://m.agedm.io/",
-                "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/244.178.44.111 Safari/537.36"
-            }
+        const res = await this.$get(`/v2/detail/${url}`, {
+            "Referer": this.referer,
         });
         const json_res = JSON.parse(JSON.stringify(res))
         
@@ -112,8 +113,8 @@ export default class extends Extension {
         const res = await this.request("",{
             headers:{
                 'Miru-Url':url,
-                "Referer":"https://m.agedm.io/",
-                "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/244.178.44.111 Safari/537.36"
+                "Referer":this.referer,
+                "User-Agent":this.ua
             }
         });
         
@@ -134,4 +135,3 @@ export default class extends Extension {
         };
     }
 }
-
