@@ -13,6 +13,19 @@
   "webSite": "https://360zy.com"
  },
  {
+  "author": "appdevelpo",
+  "icon": "https://www.agedm.io/favicon.ico",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "AGE动漫",
+  "nsfw": "false",
+  "package": "agedm.io",
+  "type": "bangumi",
+  "url": "agedm.io.js",
+  "version": "v0.0.3",
+  "webSite": "https://www.agedm.io"
+ },
+ {
   "author": "jason",
   "icon": "https://bfzy.tv/static/img/favicon.png",
   "lang": "zh-cn",
