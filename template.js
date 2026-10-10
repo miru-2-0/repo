@@ -59,9 +59,14 @@ export default class extends Extension {
       ],
 
       // ---- 可选：字符串 ----
-      type: "类型",
+      type: "类型（如：动作/剧情）",
+      kind: "种类（如：TV/OVA/剧场版）",
+      original_name: "原版名称（如：進撃の巨人）",
+      other_name: "其他名称（如：自由之翼 / Attack on Titan）",
       director: "导演",
       writer: "编剧",
+      author: "原作（如：諫山創，可与编剧不同或相同）",
+      company: "制作公司",
       area: "地区",
       lang: "语言",
       year: "年份",
@@ -69,6 +74,7 @@ export default class extends Extension {
       remarks: "状态（更新至12集）",
       total: "总集数",
       score: "评分",
+      tags: "标签（数组或空格分隔字符串，如：['热血','战斗']）",
 
       // ---- 演员（两种兼容）----
       // 1) 数组：元素可为 {name, role, avatar} 对象，或纯名字字符串
