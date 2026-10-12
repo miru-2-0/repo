@@ -26,6 +26,19 @@
   "webSite": "https://www.agedm.io"
  },
  {
+  "author": "appdevelpo",
+  "icon": "https://ani.girigirilove.com/upload/anime.girigirilove.com_.png",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "girigiri爱动漫",
+  "nsfw": "false",
+  "package": "ani.girigirilove.com",
+  "type": "bangumi",
+  "url": "ani.girigirilove.com.js",
+  "version": "v0.0.4",
+  "webSite": "https://ani.girigirilove.com"
+ },
+ {
   "author": "jason",
   "icon": "https://bfzy.tv/static/img/favicon.png",
   "lang": "zh-cn",
