@@ -21,6 +21,15 @@
 //       则 webSite 必须是真实接口 host，否则请求会拼错域名。
 //   约定：webSite 填官网，接口/镜像域名在代码里用 Miru-Url 设定。
 //   注意：注释里不要出现 "@字段名" 后跟空白，否则会被 Miru 头部解析正则覆盖正式值。
+// 关于每页条数：
+//   latest/search 按 page 翻页，约定每页以 50 条为目标（MacCMS 系即 pagesize=50）。
+//   约定：
+//     - 默认按 50 条一页来写，请求时带上 pagesize=50 / limit=50 等参数；
+//     - 最终以服务端实际返回为准。若服务端有硬上限（固定 20 条/页、无视
+//       pagesize/limit/num，响应里的 limit 字段恒为 20），就返回服务端给的条数，
+//       不要为了凑够 50 条去并发拉多页再自行裁剪拼接——请求量成倍放大，
+//       且列表实时更新时容易出现重复或漏项；
+//     - 遇到这类源，请在 latest() 上方用注释写明实测结论，方便后来者不必重新试参数。
 
 export default class extends Extension {
   // 请求的公共封装：显式指定 Miru-Url（接口 host），与 webSite（官网）解耦。
@@ -39,7 +48,7 @@ export default class extends Extension {
     return {};
   }
 
-  // 最新/首页列表
+  // 最新/首页列表（每页条数约定见文件头「关于每页条数」）
   async latest(page) {
     return [
       {
