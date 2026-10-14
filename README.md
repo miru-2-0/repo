@@ -19,6 +19,7 @@ Miru extensions repository | [Miru App Download](https://github.com/miru-2-0/mir
 | 无尽资源网 | wujinzy.com | v0.0.5 | hualiong | MIT | zh-cn | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/wujinzy.com.js) |
 | 丫丫资源 | yayazy.net | v0.0.5 | jason | MIT | zh-cn | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/yayazy.net.js) |
 | 樱花资源 | yhzy.cc | v0.0.4 | hualiong | MIT | zh-cn | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/yhzy.cc.js) |
+| 优质资源库 | yzzy.tv | v0.0.5 | hualiong | MIT | zh-cn | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/yzzy.tv.js) |
 
 
 ## Disclaimer

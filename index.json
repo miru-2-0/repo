@@ -167,5 +167,18 @@
   "url": "yhzy.cc.js",
   "version": "v0.0.4",
   "webSite": "https://yhzy.cc"
+ },
+ {
+  "author": "hualiong",
+  "icon": "https://1080zyk1.com/favicon.ico",
+  "lang": "zh-cn",
+  "license": "MIT",
+  "name": "优质资源库",
+  "nsfw": "false",
+  "package": "yzzy.tv",
+  "type": "bangumi",
+  "url": "yzzy.tv.js",
+  "version": "v0.0.5",
+  "webSite": "https://yzzy.tv"
  }
 ]
