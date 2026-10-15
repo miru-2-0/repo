@@ -118,7 +118,7 @@
  },
  {
   "author": "bachig26",
-  "icon": "https://www.supercartoons.net/wp-content/uploads/logo.png",
+  "icon": "https://www.supercartoons.net/wp-content/themes/supercartoons/favicon.png",
   "lang": "en",
   "license": "MIT",
   "name": "SuperCartoons",
@@ -126,7 +126,7 @@
   "package": "supercartoons.net",
   "type": "bangumi",
   "url": "supercartoons.net.js",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "webSite": "https://www.supercartoons.net"
  },
  {
