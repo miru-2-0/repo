@@ -130,6 +130,19 @@
   "webSite": "https://www.supercartoons.net"
  },
  {
+  "author": "bachig26",
+  "icon": "https://www.topcartoons.tv/favicon.ico",
+  "lang": "en",
+  "license": "MIT",
+  "name": "TopCartoons",
+  "nsfw": "false",
+  "package": "topcartoons.tv",
+  "type": "bangumi",
+  "url": "topcartoons.tv.js",
+  "version": "v0.1.0",
+  "webSite": "https://www.topcartoons.tv"
+ },
+ {
   "author": "hualiong",
   "icon": "https://ukuzy3.com/template/vipzy/images/logo.gif",
   "lang": "zh-cn",

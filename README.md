@@ -16,6 +16,7 @@ Miru extensions repository | [Miru App Download](https://github.com/miru-2-0/mir
 | sazkino | sazkino.com | v0.0.1 |  |  | zh-ug | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/sazkino.com.js) |
 | 速播资源 | subozy.com | v0.0.4 | hualiong | MIT | zh-cn | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/subozy.com.js) |
 | SuperCartoons | supercartoons.net | v0.1.0 | bachig26 | MIT | en | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/supercartoons.net.js) |
+| TopCartoons | topcartoons.tv | v0.1.0 | bachig26 | MIT | en | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/topcartoons.tv.js) |
 | U酷资源站 | ukuzy.com | v0.0.5 | hualiong | MIT | zh-cn | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/ukuzy.com.js) |
 | 无尽资源网 | wujinzy.com | v0.0.5 | hualiong | MIT | zh-cn | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/wujinzy.com.js) |
 | 丫丫资源 | yayazy.net | v0.0.5 | jason | MIT | zh-cn | bangumi | [Source Code](https://github.com/miru-2-0/repo/blob/main/repo/yayazy.net.js) |
