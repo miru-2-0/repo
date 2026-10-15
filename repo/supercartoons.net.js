@@ -1,12 +1,12 @@
 // ==MiruExtension==
 // @name         SuperCartoons
-// @version      v0.1.0
+// @version      v0.1.1
 // @author       bachig26
 // @lang         en
 // @license      MIT
 // @package      supercartoons.net
 // @type         bangumi
-// @icon         https://www.supercartoons.net/wp-content/uploads/logo.png
+// @icon         https://www.supercartoons.net/wp-content/themes/supercartoons/favicon.png
 // @webSite      https://www.supercartoons.net
 // @nsfw         false
 // ==/MiruExtension==
