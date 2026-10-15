@@ -117,6 +117,19 @@
   "webSite": "https://www.subozy.com"
  },
  {
+  "author": "bachig26",
+  "icon": "https://www.supercartoons.net/wp-content/uploads/logo.png",
+  "lang": "en",
+  "license": "MIT",
+  "name": "SuperCartoons",
+  "nsfw": "false",
+  "package": "supercartoons.net",
+  "type": "bangumi",
+  "url": "supercartoons.net.js",
+  "version": "v0.1.0",
+  "webSite": "https://www.supercartoons.net"
+ },
+ {
   "author": "hualiong",
   "icon": "https://ukuzy3.com/template/vipzy/images/logo.gif",
   "lang": "zh-cn",
